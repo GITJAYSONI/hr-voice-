@@ -1,0 +1,16 @@
+# 1. Activate your virtual environment
+.\venv\Scripts\activate
+
+# 2. Install requirements (since you had a missing module error)
+pip install -r requirements.txt
+
+# 3. Start the backend server
+python -m src.main
+uvicorn src.main:app --reload
+
+
+# 1. Go to the frontend folder
+cd frontend
+
+# 2. Start the React frontend
+npm run dev
